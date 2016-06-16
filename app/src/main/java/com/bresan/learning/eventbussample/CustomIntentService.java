@@ -10,6 +10,10 @@ import org.greenrobot.eventbus.EventBus;
  */
 public class CustomIntentService extends android.app.IntentService {
 
+    public CustomIntentService() {
+        super("custom-intent");
+    }
+
     public CustomIntentService(String name) {
         super(name);
     }
