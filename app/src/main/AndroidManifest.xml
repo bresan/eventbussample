@@ -19,6 +19,7 @@
         <service
             android:name=".CustomIntentService"
             android:exported="false"/>
+
     </application>
 
 </manifest>

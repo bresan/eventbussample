@@ -44,4 +44,9 @@ public class MainActivity extends AppCompatActivity {
     public void myMethodForSubscriber(IntentServiceResult intentServiceResult) {
         Toast.makeText(this, intentServiceResult.getmResultValue(), Toast.LENGTH_SHORT).show();
     }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void myAnotherMethodForSubscriber(AnotherResult anotherResult) {
+        Toast.makeText(this, anotherResult.getMessage(), Toast.LENGTH_SHORT).show();
+    }
 }

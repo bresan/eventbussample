@@ -20,6 +20,7 @@ public class CustomIntentService extends android.app.IntentService {
 
     @Override
     protected void onHandleIntent(Intent intent) {
-        EventBus.getDefault().post(new IntentServiceResult(Activity.RESULT_OK, "it works!"));
+        EventBus.getDefault().post(new IntentServiceResult(Activity.RESULT_OK, "this is one!"));
+        EventBus.getDefault().post(new AnotherResult(Activity.RESULT_OK, "this is another!"));
     }
 }
